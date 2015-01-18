@@ -1,0 +1,146 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Kristian}{Sällberg}
+\title{CV}                               % optional, remove / comment the line if not wanted
+\address{Kungshamra 41}{17070 Solna}{Sweden}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+46~(0)~730~453~111}                   % optional, remove / comment the line if not wanted
+\email{kristian@purestyle.se}                               % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2013--2015 (Expected)}{MSc Software Engineering of Distributed Systems}{KTH}{Stockholm}{\textit{}}{
+Distributed systems, peer-to-peer technology and network programming.
+}  % arguments 3 to 6 can be left empty
+
+\cventry{2010--2013}{BSc Computer Science}{University of Gothenburg}{Gothenburg}{\textit{}}{
+Broad computer science bachelor. Courses ranging from machine level programming to concurrency and databases. I specialized in functional programming during the last year.
+}
+
+\cventry{Aug 2012--Dec 2012}{Erasmus Exchange}{University of Glasgow}{Glasgow}{\textit{}}{
+I spent one semester in Glasgow taking courses in functional programming, algorithms and programming language theory.
+}
+
+%\cventry{2004--2007}{High School}{Kungshögagymnasiet}{Mjölby}{\textit{}}{
+%Natural sciences and mathematics.
+%}
+
+\section{Experience}
+\subsection{Work Experience}
+
+\cventry{Sep 2014--Oct 2014}{Teaching Assistant}{KTH}{Stockholm}{}{
+Assisted master students with the course \textit{Distributed Systems, Basic Course}. I helped setting up Erlang and answering questions on how to use Functional Programming and Erlang to solve the course assignments.
+}
+
+\cventry{Jun 2014--Aug 2014}{Summer Intern}{Tail-f Systems}{Stockholm}{}{
+Python, Erlang, Compilers.
+}
+
+\cventry{Jun 2009--Aug 2010}{Interactive Developer}{Crispin	Porter Bogusky}{Gothenburg}{}{
+Followed to Crispin Porter Bogusky when Daddy Production (below) was acquired. I worked here during various school breaks until 2012.
+}
+
+\cventry{Feb 2008--Jun 2009}{Flash Developer}{Daddy Production}{Gothenburg}{}{
+Front-end developer mainly using ActionScript 2/3. Produced advertising campaign sites and banners.
+}
+
+\cventry{Sep 2007--Dec 2007}{Technical Designer Intern}{Lightmaker}{Amsterdam}{}{
+Web development. I did this right after High School with no other formal education.
+}
+
+\cventry{Oct 2006--Feb 2007}{Freelance Web Developer (Part Time)}{Vectuz Webworks}{Mjölby}{}{
+Working with web development in spare time during high school.
+}
+
+\pagebreak
+
+\subsection{Volunteering}
+
+\cventry{2012}{Room Responsible}{Software Passion Summit}{Gothenburg}{}{
+Software Passion Summit was a technology conference focusing on development and testing.
+}
+
+\cventry{2011}{Student Representative}{University of Gothenburg}{Gothenburg}{}{
+Working on improving the course quality on courses \textit{Testing Debugging Verification} and \textit{Project course}.
+}
+
+\cventry{2010}{Assistant Stage Manager}{Flash In The Can}{Amsterdam}{}{
+FITC is a design and technology conference. I helped the Stage Manager of the venue's second largest stage keeping track
+of presenters, schedules and other volunteers.
+}
+
+\section{Software}
+\cvitemwithcomment{}{Proficiency between 0 \& 10:}{}
+\cvitemwithcomment{Distributed Systems}{7/10}{}
+\cvitemwithcomment{Databases (RDBMS \& NoSQL)}{6/10}{}
+\cvitemwithcomment{Testing (Unit Testing \& QuickCheck)}{5/10}{}
+\cvitemwithcomment{OOP}{6/10}{}
+\cvitemwithcomment{Functional Programming}{8/10}{}
+\cvitemwithcomment{Haskell}{8/10}{}
+\cvitemwithcomment{Erlang/OTP}{6/10}{}
+\cvitemwithcomment{Python}{9/10}{}
+\cvitemwithcomment{Java}{5/10}{}
+\cvitemwithcomment{ActionScript 2/3}{10/10}{}
+\cvitemwithcomment{C/C++}{4/10}{}
+
+\section{Extra}
+\cvitem{Driver's License}{B}
+\cvitem{Swedish}{Native}
+\cvitem{English}{Full professional proficiency}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
