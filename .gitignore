@@ -1,1 +1,4 @@
-cv-kristian-sallberg.pdf
+*.aux
+*.log
+*.dvi
+*.out
