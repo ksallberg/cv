@@ -13,7 +13,7 @@
 % moderncv themes
 \moderncvstyle{banking} % style options are 'casual' (default),
                         % 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}    % color options 'blue' (default), 'orange',
+\moderncvcolor{blue}    % color options 'blue' (default), 'orange',
                         % 'green', 'red', 'purple', 'grey' and 'black'
 
 % character encoding
@@ -27,7 +27,7 @@
 \title{CV} % optional, remove / comment the line if not wanted
 % optional, remove / comment the line if not wanted; the "postcode city"
 % and and "country" arguments can be omitted or provided empty
-\address{Kungshamra 41}{17070 Solna}{Sweden}
+\address{Oxelbacken 3}{13831 Älta}{Sweden}
 \phone[mobile]{+46~(0)~730~453~111} % optional, remove / comment
                                     % the line if not wanted
 \email{kristian@purestyle.se} % optional, remove / comment
@@ -49,43 +49,40 @@
 %-----       resume       ----------------------------------------------------
 \makecvtitle
 
-\section{Education}
-\cventry{2013--2015 (Expected)}
-        {MSc Software Engineering of Distributed Systems}
-        {KTH}
+Keywords: System design \& architecture, Distributed systems, Erlang, Haskell,
+Linux, Python, Java, git, svn, make, databases, testing software
+
+% ---- experience
+\section{Work Experience}
+
+\cventry{Aug 2015--Present}
+        {Software Engineer}
+        {Cisco Systems AB}
         {Stockholm}
-        {\textit{}}{
-Distributed systems, peer-to-peer technology and network programming.
+        {}{
+Working within a group responsible for network configuration and
+automation. Using our products ConfD and NSO, customers can
+speed up deployment of network services and decrease OPEX.
+I am part of the team responsible for an auto generated Command Line Interface.
+Customers write YANG models to define what their CLI will look like.
+In addition to this, I work on maintaining and extending a YANG compiler.
+I use Erlang/OTP.
 }
 
-\cventry{2010--2013}
-        {BSc Computer Science}
-        {University of Gothenburg}
-        {Gothenburg}
-        {\textit{}}{
-Broad computer science bachelor. Courses ranging from machine level
-programming to concurrency and databases. I specialized in functional
-programming during the last year.
-}
-
-\cventry{Aug 2012--Dec 2012}
-        {Erasmus Exchange}
-        {University of Glasgow}
-        {Glasgow}
-        {\textit{}}{
-I spent one semester in Glasgow taking courses
-in functional programming, algorithms and programming language theory.
-}
-
-\section{Experience}
-\subsection{Work Experience}
-
-\cventry{Feb 2015--June 2015 (Expected)}
+\cventry{Feb 2015--July 2015}
         {Master Thesis Student}
-        {Cisco,  Inc / Tail-f Systems}
+        {Cisco Systems AB / Tail-f Systems}
         {Stockholm}
-        {}
-        {Ongoing, no description yet.}
+        {}{
+Titled \textit{``A Data Model Driven Approach to Managing Network Functions
+  Virtualization''}.
+I developed a driver to enable a network configuration system (ConfD)
+to virtualize VMs, on top of libvirt. Using this driver,
+it is possible to launch and configure Virtual Network Functions (VNFs).
+VNFs allow network operators to implement network services faster.
+As a part of the work, I evaluated alternative approaches and compared
+them to the master thesis' solution.
+}
 
 \cventry{Sep 2014--Oct 2014}
         {Teaching Assistant}
@@ -131,9 +128,43 @@ High School with no other formal education.
 Working with web development in spare time during high school.
 }
 
-\pagebreak
+% ---- experience end
 
-\subsection{Volunteering}
+% ---- education
+
+\section{Education}
+\cventry{2013--2015}
+        {MSc Software Engineering of Distributed Systems}
+        {KTH}
+        {Stockholm}
+        {\textit{}}{
+Distributed systems, peer-to-peer technology and network programming.
+}
+
+\cventry{2010--2013}
+        {BSc Computer Science}
+        {University of Gothenburg}
+        {Gothenburg}
+        {\textit{}}{
+Broad computer science bachelor. Courses ranging from machine level
+programming to concurrency and databases. I specialized in functional
+programming during the last year.
+}
+
+\cventry{Aug 2012--Dec 2012}
+        {Erasmus Exchange}
+        {University of Glasgow}
+        {Glasgow}
+        {\textit{}}{
+I spent one semester in Glasgow taking courses
+in functional programming, algorithms and programming language theory.
+}
+
+% ---- education end
+
+%% \pagebreak
+
+\section{Volunteering}
 
 \cventry{2012}{Room Responsible}{Software Passion Summit}{Gothenburg}{}{
 Software Passion Summit was a technology
@@ -156,35 +187,13 @@ of presenters, schedules and other volunteers.
                   {Cisco Systems, Inc.}
                   {June 2012 - Present}
 
-\section{Software}
-\cvitemwithcomment{}{Proficiency between 0 \& 10:}{}
-\cvitemwithcomment{Distributed Systems}{7/10}{}
-\cvitemwithcomment{Databases (RDBMS \& NoSQL)}{6/10}{}
-\cvitemwithcomment{Testing (Unit Testing \& QuickCheck)}{5/10}{}
-\cvitemwithcomment{OOP}{6/10}{}
-\cvitemwithcomment{Functional Programming}{8/10}{}
-\cvitemwithcomment{Haskell}{8/10}{}
-\cvitemwithcomment{Erlang/OTP}{6/10}{}
-\cvitemwithcomment{Python}{9/10}{}
-\cvitemwithcomment{Java}{5/10}{}
-\cvitemwithcomment{ActionScript 2/3}{10/10}{}
-\cvitemwithcomment{C/C++}{3/10}{}
-
 \section{Extra}
 \cvitem{Driver's License}{B}
 \cvitem{Swedish}{Native}
-\cvitem{English}{Full professional proficiency}
+\cvitem{English}{Professional proficiency}
 
 \nocite{*}
 \bibliographystyle{plain}
 \bibliography{publications}
 
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}
 \end{document}
